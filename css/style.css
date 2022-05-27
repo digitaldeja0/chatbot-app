@@ -27,3 +27,12 @@ h2{
     border: 2px solid blue;
     cursor: pointer;
 }
+
+#q1{
+    background-color: white;
+    color: black;
+    width: 300px;
+    border: none;
+    cursor: pointer;
+
+}

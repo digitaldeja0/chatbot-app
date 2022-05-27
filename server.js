@@ -14,14 +14,20 @@ const server = http.createServer((req, res) => {
       res.write(data);
       res.end();
     });
-  } else if (page == "/otherpage") {
-    fs.readFile("otherpage.html", function (err, data) {
+  } else if (page == "/checkbalance") {
+    fs.readFile(".html", function (err, data) {
       res.writeHead(200, { "Content-Type": "text/html" });
       res.write(data);
       res.end();
     });
-  } else if (page == "/otherotherpage") {
-    fs.readFile("otherotherpage.html", function (err, data) {
+  } else if (page == "/addfunds") {
+    fs.readFile("addfunds.html", function (err, data) {
+      res.writeHead(200, { "Content-Type": "text/html" });
+      res.write(data);
+      res.end();
+    });
+  } else if (page == "/transferfunds") {
+    fs.readFile("transferfunds.html", function (err, data) {
       res.writeHead(200, { "Content-Type": "text/html" });
       res.write(data);
       res.end();
