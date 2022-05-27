@@ -1,13 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-html,body{
+
+body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     height: 100vh;
-    overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+
+.login{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.login>*{
+    margin-left: 5px;
+    margin-right: 5px ;
+}
+
+
 .container{
     display: flex;
     flex-direction: column;
@@ -26,13 +42,48 @@ h2{
     width: 300px;
     border: 2px solid blue;
     cursor: pointer;
+    padding: .3em;
+    font-size: 17px;
+    display: none;
 }
 
-#q1{
-    background-color: white;
+#r1, #r2{
+    background-color: lightblue;
+    padding: 1em;
     color: black;
     width: 300px;
     border: none;
-    cursor: pointer;
+    cursor:auto;
 
+}
+
+#r1{
+    display: none;
+}
+
+#r2{
+    display: none;
+}
+
+#link1, #link2{
+    background-color: lightcyan;
+    color: black;
+    font-size: 17px;
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    padding: 1000px auto;
+    width: 100vw;
+    display: flex;
+    color: white;
+    align-content: center;
+    justify-content: center;
 }

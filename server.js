@@ -15,7 +15,7 @@ const server = http.createServer((req, res) => {
       res.end();
     });
   } else if (page == "/checkbalance") {
-    fs.readFile(".html", function (err, data) {
+    fs.readFile("checkbalance.html", function (err, data) {
       res.writeHead(200, { "Content-Type": "text/html" });
       res.write(data);
       res.end();
@@ -38,8 +38,7 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, { "Content-Type": "application/json" });
         const objToJson = {
           name: "leon",
-          status: "Boss Man",
-          currentOccupation: "Baller",
+          status: "$10,000",
         };
         res.end(JSON.stringify(objToJson));
       } //student = leon
