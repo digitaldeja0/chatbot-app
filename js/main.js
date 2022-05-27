@@ -6,12 +6,6 @@ const a3 = document.querySelector("#a3");
 const link1 = document.querySelector("#link1");
 const link2 = document.querySelector("#link2");
 
-console.log(a1, a2, a3);
-
-function check(a) {
-  console.log(` ${a} this was clicked`);
-}
-
 a1.addEventListener("click", makeReq);
 a2.addEventListener("click", () => {
   console.log("C was clicked");
